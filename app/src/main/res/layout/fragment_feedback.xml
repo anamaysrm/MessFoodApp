@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:background="@drawable/background1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:paddingBottom="30dp">
+
+  <!-- TODO: Update blank fragment layout -->
+
+  <RatingBar
+      android:id="@+id/ratingBar"
+      android:layout_width="241dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/borders"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+  <EditText
+      android:id="@+id/editText3"
+      android:layout_width="241dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="272dp"
+      android:autoText="true"
+      android:background="@drawable/borders"
+      android:alpha="0.7"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="1. Quality"
+      android:textStyle="bold"
+      android:visibility="visible"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/editText5"
+      android:layout_width="241dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/borders"
+      android:alpha="0.7"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="2. Quantity"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+  <RatingBar
+      android:id="@+id/ratingBar2"
+      android:layout_width="241dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/borders"
+
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+  <EditText
+      android:id="@+id/editText6"
+      android:layout_width="241dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/borders"
+      android:ems="10"
+      android:alpha="0.7"
+      android:inputType="textPersonName"
+      android:text="3. Taste"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+  <RatingBar
+      android:id="@+id/ratingBar3"
+      android:layout_width="241dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="32dp"
+      android:background="@drawable/borders"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editText6"
+      app:layout_constraintVertical_bias="0.205" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
